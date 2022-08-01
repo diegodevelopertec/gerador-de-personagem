@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.container{
+    background-color: rgb(23, 12, 68);
+    height: 100vh;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+ 
+}
+
+.initial{
+   height:100px;
+   margin-top: 120px;
+   color: orange;
+}
+.shen{
+    position: fixed;
+    bottom: 0;
+    height: 300px;
+    left: 70%;
+    margin-right: 50px;
+}
+.container-app{
+    margin-top: 50px;
+    width: 600px;
+    height: 400px;
+    max-height: 600px;
+   
+    display: none;
+}
+.container-photo{
+   
+    padding: 23px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-photo img{
+    height: 100%;
+}
+.container-desc{
+    flex: 1;
+    padding: 2%;
+    background-color: rgb(105, 105, 237);
+    font-size: 16px;
+    color: rgb(238, 239, 240);
+    border-radius: 10px;
+}
+
+h3{
+    color: rgb(39, 28, 238);
+    text-shadow: 0px 1px 0px orange;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+button{ 
+    color: orange;
+    background-color: rgb(15, 15, 63);
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+}
+button img{
+    height: 50px;
+}
+button:hover{
+    background-color:rgb(255, 132, 0);
+    color: rgb(9, 9, 101);
+    border-color:rgba(25, 25, 196, 0.975);
+  cursor: pointer;
+}
+.cx-button{
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width:990px){
+
+    .container{
+        height: 100vh;
+        width: 100vw;
+     
+       
+    }
+  .cx-button{
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+    .container-app{
+        flex-direction:column;
+        width: 100vw;
+        padding: 2%;
+      
+       
+    }
+    .container-photo{
+      width: 100%;
+        height: 200px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+      
+    }
+    .container-photo img{
+        height: 200px;
+    }
+    .container-desc{
+        background-color: transparent;
+    }
+   
+    .shen{
+ display: none;
+    }
+
+    h3{
+        text-align: center;
+    margin-top: 15px;
+    }
+    .initial p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        color: rgb(37, 37, 156);
+     font-size: 24px;
+    }
+}
