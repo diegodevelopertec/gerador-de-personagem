@@ -13,7 +13,8 @@ type listAvatar={
 
 
 let listOfAvatar:listAvatar[]=[
-    {   name:'Goku',
+    {  
+         name:'Goku',
         img:'/goku.png',
         description:`
         Protagonista da Animação,Goku é um personagem da raça sayajim que foi enviado a terra pleo seu pai para ter sua vida
@@ -38,9 +39,6 @@ let listOfAvatar:listAvatar[]=[
         description:` Filho mais velho de Vegeta.Trunks adulto teve sua primeira aparição durante as sagas andróide.Veio do futuro para ajudar Goku com a sua doença e
         também avisar á todos da terrivel possibilidade de um futuro sem eles.Trunks mais tarde veio novamente pedir a ajudar dos guerreiros durante a saga Goku Black.`
     
-    
-    
-    
     },
     {
          name:'Gohan',
@@ -57,8 +55,6 @@ let listOfAvatar:listAvatar[]=[
         img:'/piccolo.png',
         description:`
         Piccolo é um anti-herói,originalmente era inimigo de Goku e mais tarde não só tornou-se amigo deste como também foi o responsável por treinar seu Filho Gohan e sua neta Pan.
-        
-        
         
         `
     },
@@ -79,9 +75,6 @@ let listOfAvatar:listAvatar[]=[
         nivel Perfeito ele teria que absover os andróides N°17 e N°18 e assim o fez,porém foi destruido por Gohan.
     `},
  
-
-
-
 ]
 
 
@@ -91,7 +84,9 @@ let setData=()=>{
     initial.style.display='none'
     app.style.display='flex'
     btnRandom.innerHTML='<img src="/imgs/esfera.png" alt="">novo personagem'
+
     let index:number=Math.floor(Math.random() * listOfAvatar.length) 
+    
     nameAvatar.innerHTML=listOfAvatar[index].name
     avatar.src=`./imgs${listOfAvatar[index].img}`
     descAvatar.innerHTML=listOfAvatar[index].description

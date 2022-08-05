@@ -6,14 +6,16 @@ const avatar = document.querySelector('#avatar');
 const app = document.querySelector('.container-app');
 const initial = document.querySelector('.initial');
 let listOfAvatar = [
-    { name: 'Goku',
+    {
+        name: 'Goku',
         img: '/goku.png',
         description: `
         Protagonista da Animação,Goku é um personagem da raça sayajim que foi enviado a terra pleo seu pai para ter sua vida
         salva da destruição doe seu antigo planeta:planeta Vegeta.Ao longo de toda a sua trajetória como terráqueo fez grandes amigos 
         e também inimigos até que aos poucos foi descobrindo as suas origens.Tornou-se paide Gohan e Goten
         
-    ` },
+    `
+    },
     {
         name: 'Vegeta',
         img: '/vegeta.png',
@@ -47,8 +49,6 @@ let listOfAvatar = [
         img: '/piccolo.png',
         description: `
         Piccolo é um anti-herói,originalmente era inimigo de Goku e mais tarde não só tornou-se amigo deste como também foi o responsável por treinar seu Filho Gohan e sua neta Pan.
-        
-        
         
         `
     },
